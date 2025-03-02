@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Doctor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <img src="logo.png" SIZE="120" width="150" height="150">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <h1>Contacto</h1>
+    <div class="card">
+        <input value="" class="blind-check" type="checkbox" id="blind-input" hidden />
+    
+        <label for="blind-input" class="blind_input">
+            <span class="hide">Ocultar</span>
+            <span class="show">Mostrar</span>
+        </label>
+    
+        <form class="form" id="contact-form">
+            <div class="title">Contáctanos</div>
+    
+            <label class="label_input" for="email-input">Correo</label>
+            <input spellcheck="false" class="input" type="email" name="email" id="email-input" required />
+    
+            <label class="label_input" for="message-input">Mensaje</label>
+            <textarea class="input" name="message" id="message-input" rows="4" required></textarea>
+    
+            <button class="submit" type="submit">Enviar</button>
+        </form>
+    
+        <label for="blind-input" class="avatar">
+            <!-- SVG del Mono (se mantiene el mismo) -->
+        </label>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados.</p>
+        <img src="logo.png" SIZE="120" width="150" height="150">
+    </footer>
+</body>
+</html>
